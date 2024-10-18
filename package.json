@@ -4,7 +4,7 @@
   "description": "Fancode Assignment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:run": "cypress open --config-file cypress.config.js"
   },
   "author": "Krishnpal Parmar",
   "license": "ISC",
