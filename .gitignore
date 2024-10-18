@@ -1,0 +1,6 @@
+cypress/screenshots
+cypress/videos
+node_modules
+cypress/integration/examples
+report.txt
+cypress/downloads
