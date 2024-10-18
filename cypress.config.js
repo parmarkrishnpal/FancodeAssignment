@@ -33,7 +33,7 @@ module.exports = defineConfig({
   ],
   e2e: {
     testIsolation: false,
-    specPattern: ["**/e2e/api-tests/*.cy.js"],
+    specPattern: ["**/e2e/api_tests/*.cy.js"],
     supportFile: false,
     env: {
       apiBaseUrl: "https://jsonplaceholder.typicode.com",

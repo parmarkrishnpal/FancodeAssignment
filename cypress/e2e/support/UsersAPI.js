@@ -1,6 +1,6 @@
 class UserAPI {
     constructor() {
-      this.apiBaseUrl = Cypress.env("apiBaseUrl"); // Use base URL from Cypress config
+      this.apiBaseUrl = Cypress.env("apiBaseUrl");
     }
   
     /**
@@ -23,18 +23,7 @@ class UserAPI {
         .request("GET", `${this.apiBaseUrl}/users/${userId}/todos`)
         .then((response) => response.body);
     }
-  
-    /**
-     * Check if the user's latitude and longitude falls within FanCode city range
-     * @param {Object} user - User object
-     * @returns {Boolean} True if user is from FanCode city
-     */
-    isUserFromFanCodeCity(user) {
-      const lat = parseFloat(user.address.geo.lat);
-      const lng = parseFloat(user.address.geo.lng);
-      return lat > -40 && lat < 5 && lng > 5 && lng < 100;
-    }
   }
   
-  export default new UserAPI(); // Exporting an instance to reuse across files
+  export default new UserAPI();
   
